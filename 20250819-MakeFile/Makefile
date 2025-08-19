@@ -13,7 +13,7 @@ $(BIN):$(OBJ)
 	@echo "linking $^ to $@ ...done"
 %(.o):%(.c)
 	@${CC} -c $<
-	@echo "compling $^ to $@ ...done"
+	@echo "compiling $< to $@ ...done"
 
 .PHONY:clean
 clean:
@@ -22,5 +22,5 @@ clean:
 .PHONY:test
 test:
 	@echo $(SRC)
-	@echo $(OBJ)
+	@echo
 
